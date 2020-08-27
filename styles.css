@@ -1,0 +1,185 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    background-color: black;
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 0px 5px 10px #555;
+}
+
+#title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: blue;
+    padding-top: 10px;
+}
+
+#name {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: absolute;
+    display: inline-block;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+
+#color-container {
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.color {
+    border: 10px solid black;
+}
+
+#red {
+    background-color: darkred;
+    border-radius: 100% 0px 0px 0px;
+    grid-row: 1/4;
+    grid-column: 1/4;
+    cursor: pointer;
+}
+
+#lime {
+    background-color: darkgreen;
+    border-radius: 0px 100% 0px 0px;
+    grid-row: 1/4;
+    grid-column: 4/7;
+    cursor: pointer;
+}
+
+#blue {
+    background-color: darkblue;
+    border-radius: 0px 0px 0px 100%;
+    grid-row: 4/7;
+    grid-column: 1/4;
+    cursor: pointer;
+}
+
+#yellow {
+    background-color: darkkhaki;
+    border-radius: 0px 0px 100% 0px;
+    grid-row: 4/7;
+    grid-column: 4/7;
+    cursor: pointer;
+}
+
+#center {
+    margin: 50px;
+    border: 20px solid black;
+    border-radius: 50%;
+    background-color: cadetblue;
+    grid-row: 2/6;
+    grid-column: 2/6;
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+#control {
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
+    margin-top: 70px;
+    background-image: linear-gradient(0deg, grey, white);
+    border: 2px solid grey;
+    border-style: inset;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: auto 30px 20px 30px 20px 30px auto;
+    grid-template-rows: 15% 30px 10% auto auto auto;
+}
+
+.label {
+    color: grey;
+    font-size: 10px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px white;
+}
+
+#control button {
+    border: 1px solid #555;
+    background-image: radial-gradient(#ddd,#eee, grey);
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px white;
+}
+
+#control button:hover {
+    border: 1px solid black;
+}
+
+#level-speed {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#level-length {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#level-start {
+    grid-column: 6/7;
+    grid-row: 2/3;
+}
+
+#label-speed {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#label-length {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+#label-start {
+    grid-column: 6/7;
+    grid-row: 4/5;
+}
+
+#display {
+    font-family: monospace;
+    grid-column: 3/6;
+    grid-row: 5/6;
+    box-shadow: 0px 2px 1px white;
+    background-color: black;
+    border-radius: 3px;
+    color: azure;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+#display span {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
